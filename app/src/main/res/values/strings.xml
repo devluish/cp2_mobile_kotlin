@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">cp2_mobile</string>
+    <string name="calculadora">Calculadora</string>
+    <string name="conta_telefonica">Conta Telefônica</string>
+    <string name="aluno">Aluno</string>
+    <string name="checkpoint">CheckPoint</string>
+    <string name="operacao">Operação</string>
+    <string name="soma">Soma</string>
+    <string name="subtracao">Subtração</string>
+    <string name="multiplicacao">Multiplicação</string>
+    <string name="divisao">Divisão</string>
+    <string name="calcular">Calcular</string>
+
+</resources>
