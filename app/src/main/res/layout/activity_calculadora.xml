@@ -9,4 +9,101 @@
     tools:context=".CalculadoraActivity">
 
 
+    <TextView
+        android:id="@+id/checkpoint2"
+        android:layout_width="109dp"
+        android:layout_height="30dp"
+        android:text="@string/checkpoint"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="37dp"
+        android:layout_height="33dp"
+        app:srcCompat="@drawable/seta_voltar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <EditText
+        android:id="@+id/valor1"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="Valor 1"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <EditText
+        android:id="@+id/valor2"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="Valor 2"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="235dp" />
+
+    <TextView
+        android:id="@+id/operacoes_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operacao"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupOperacoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="331dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonSoma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/soma"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSubtracao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtracao"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMultiplicacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/multiplicacao"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDivisao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/divisao"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_design"
+        android:text="@string/calcular"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="584dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
