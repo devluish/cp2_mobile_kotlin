@@ -10,5 +10,11 @@
     <string name="multiplicacao">Multiplicação</string>
     <string name="divisao">Divisão</string>
     <string name="calcular">Calcular</string>
-
+    <string name="back_button_desc">Botão de voltar</string>
+    <string name="chamada_celular">Chamada Celular</string>
+    <string name="valor_assinatura">Valor da Assinatura</string>
+    <string name="chamada_local">Chamada Local</string>
+    <string name="valor1">Valor 1</string>
+    <string name="valor2">Valor 2</string>
+    <string name="calcular_button_desc">Botão Calcular</string>
 </resources>

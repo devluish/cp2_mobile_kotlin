@@ -8,18 +8,6 @@
     android:background="@color/black"
     tools:context=".HomeActivity">
 
-    <View
-        android:id="@+id/header"
-        android:layout_width="410dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="1dp"
-        android:background="@drawable/header_design"
-        app:layout_constraintBottom_toTopOf="@+id/checkpoint"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/checkpoint"
@@ -33,21 +21,7 @@
         app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077" />
-
-    <Button
-        android:id="@+id/button_aluno"
-        android:layout_width="390dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginBottom="484dp"
-        android:background="@drawable/header_design"
-        android:text="@string/aluno"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintVertical_bias="0.043" />
 
     <Button
         android:id="@+id/button_conta_telefonica"
@@ -55,7 +29,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="11dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginBottom="88dp"
         android:background="@drawable/header_design"
         android:text="@string/conta_telefonica"
         app:layout_constraintBottom_toTopOf="@+id/button_aluno"
@@ -69,10 +43,24 @@
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="11dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/header_design"
         android:text="@string/calculadora"
         app:layout_constraintBottom_toTopOf="@+id/button_conta_telefonica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_aluno"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="512dp"
+        android:background="@drawable/header_design"
+        android:text="@string/aluno"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />

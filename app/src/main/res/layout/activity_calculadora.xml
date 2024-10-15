@@ -8,65 +8,95 @@
     android:background="@color/black"
     tools:context=".CalculadoraActivity">
 
+    <ImageView
+        android:id="@+id/seta_voltar"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/back_button_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/seta_voltar" />
 
     <TextView
         android:id="@+id/checkpoint2"
-        android:layout_width="109dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="240dp"
         android:text="@string/checkpoint"
         android:textColor="@color/white"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="35dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="37dp"
-        android:layout_height="33dp"
-        app:srcCompat="@drawable/seta_voltar"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="32dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/valor1"
-        android:layout_width="379dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="@color/white"
-        android:hint="Valor 1"
+        android:hint="@string/valor1"
         android:inputType="numberDecimal"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="170dp" />
+        android:autofillHints="paymentAmount"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/valor2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/valor2"
-        android:layout_width="379dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
         android:backgroundTint="@color/white"
-        android:hint="Valor 2"
+        android:hint="@string/valor2"
         android:inputType="numberDecimal"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="235dp" />
+        android:autofillHints="paymentAmount"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/operacoes_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valor1" />
 
     <TextView
         android:id="@+id/operacoes_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="@string/operacao"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="312dp" />
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupOperacoes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valor2" />
 
     <RadioGroup
         android:id="@+id/radioGroupOperacoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="61dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="331dp">
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="@+id/operacoes_label"
+        app:layout_constraintStart_toEndOf="@+id/operacoes_label"
+        app:layout_constraintTop_toBottomOf="@+id/operacoes_label">
 
         <RadioButton
             android:id="@+id/radioButtonSoma"
@@ -98,12 +128,19 @@
     </RadioGroup>
 
     <Button
-        android:layout_width="390dp"
-        android:layout_height="50dp"
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="280dp"
         android:background="@drawable/button_design"
         android:text="@string/calcular"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="584dp" />
-
+        android:textColor="@color/white"
+        android:contentDescription="@string/calcular_button_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupOperacoes" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
