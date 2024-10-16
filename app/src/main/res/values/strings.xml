@@ -3,7 +3,7 @@
     <string name="calculadora">Calculadora</string>
     <string name="conta_telefonica">Conta Telefônica</string>
     <string name="aluno">Aluno</string>
-    <string name="checkpoint">CheckPoint</string>
+    <string name="checkpoint">Checkpoint</string>
     <string name="operacao">Operação</string>
     <string name="soma">Soma</string>
     <string name="subtracao">Subtração</string>
@@ -17,4 +17,8 @@
     <string name="valor1">Valor 1</string>
     <string name="valor2">Valor 2</string>
     <string name="calcular_button_desc">Botão Calcular</string>
+    <string name="assinatura_text">Assinatura: R$ %.2f</string>
+    <string name="chamada_local_text">Chamada Local: R$ %.2f</string>
+    <string name="chamada_celular_text">Chamada Celular: R$ %.2f</string>
+    <string name="total_text">Total: R$ %.2f</string>
 </resources>
